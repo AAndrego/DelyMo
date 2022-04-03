@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="400px"
     android:layout_marginLeft="16dp"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="16dp"
     android:layout_marginRight="16dp"
     android:layout_marginBottom="8dp"
+    android:layoutAnimation="@anim/layout_animation"
     android:background="@color/dark_grey"
     android:visibility="visible">
 
@@ -15,10 +16,10 @@
         android:id="@+id/business_image"
         android:layout_width="400px"
         android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="0dp"
         android:src="@drawable/ic_image_place_holder"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
@@ -28,7 +29,7 @@
         android:layout_width="196dp"
         android:layout_height="130dp"
         android:layout_marginStart="16dp"
-        android:maxLines="9"
+        android:maxLines="2"
         android:text="Business Name"
         android:textColor="@color/white"
         android:textSize="18sp"

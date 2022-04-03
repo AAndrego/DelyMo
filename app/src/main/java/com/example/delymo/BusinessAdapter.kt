@@ -17,6 +17,7 @@ class BusinessAdapter(
             itemView.business_name.text = business.name
             Glide.with(itemView).load("https:"+business.image).into(itemView.business_image)
         }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BusinessViewHolder {
